@@ -1,8 +1,6 @@
 from flask import Flask, render_template
-from flask_fontawesome import FontAwesome
 
 app = Flask(__name__)
-fa = FontAwesome(app)
 
 app_name = "Dangi"
 
