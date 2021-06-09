@@ -1,13 +1,124 @@
+/* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 root {
-    --header-main: #2A2A2A;
+
+    --red-primary: #ff5555;
+    --white-primary: #ffffff;
+    --white-secondary: #F5F5F5;
+}
+
+html {
+	scroll-behavior: smooth !important;
+	outline: none !important;
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
+    outline: none !important;
+    text-decoration: none !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.page-title {
-    color: var(--header-main);
+/* ========================================== */
+/* NAVBAR */
+.custom-navbar {
+    background: #F5F5F5 !important;
+    color: #2A2A2A !important;
+    padding: 1rem 6rem;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #ff5555;
+}
+
+.navbar-brand:hover {
+    color: #ff5555;
+}
+
+.custom-navbar .navbar-nav li a {
+    color: #2A2A2A;
+    transition: .3s;
+    padding: 0.4rem 3rem;
+}
+
+.custom-navbar .navbar-nav li a:hover {
+    background: #ff5555;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.custom-navbar button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    background: #ff5555;
+    color: #ffffff !important;
+}
+
+
+/* ========================================== */
+/* HOME */
+.home {
+    background: #ff5555;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.home h1 {
+    font-weight: 800;
+    font-size: 6rem;
+}
+
+.home p {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.home button {
+    padding: 0.8rem 2rem;
+    background: #ffffff;
+    color: #ff5555;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 600;
+    margin: 1rem;
+    transition: .3s;
+}
+
+.home button:hover {
+    background: #cf4545;
+    color: #ffffff;
+    margin: 1rem;
+    transition: .3s;
+}
+
+/* ========================================== */
+/* CONTATO */
+.contato {
+    margin-top: 2rem;
+    padding: 1rem 6rem;
+}
+
+.contato h2 {
+    font-weight: 600;
+    color: #2A2A2A;
+}
+
+.contato p {
+    font-weight: 300;
+    color: #363636;
+}
+
+.contact-card {
+    padding: 2rem;
+    background: #F5F5F5;
+}
+
+.contact-card ul li {
+    list-style: none;
+    margin: 0.5rem;
 }
